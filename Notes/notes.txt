@@ -1,0 +1,15 @@
+In this code:
+
+GenerateApiKey creates a new API key using a GUID.
+
+GenerateSalt creates a new salt using a cryptographically secure random number generator.
+
+GenerateSaltedHash appends the salt to the API key and hashes the result using the SHA256 algorithm.
+
+The Main method simulates the generation and verification of an API key.
+
+When you run this program, it will output the API key, the salt, the salted hash of the API key, 
+and whether the incoming API key (which is identical to the original API key in this case) is valid. 
+
+In a real-world application, you'd store the salted hash and the salt in your database, 
+and the API key would be provided by the client making the API request.
